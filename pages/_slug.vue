@@ -78,7 +78,7 @@ export default {
       this.$store.dispatch('removeTodo', todo)
     },
     save () {
-      this.$store.dispatch('saveTodos')
+      //this.$store.dispatch('saveTodos')
     }
   },
   directives: {

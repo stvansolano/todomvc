@@ -1,4 +1,5 @@
 module.exports = {
+  buildDir: 'dist',
   head: {
     title: 'TodoMVC made with Nuxt.js',
     meta: [
