@@ -1,5 +1,6 @@
 <template>
   <header class="header">
+    <!--<img src="nuxtjs.png" width="50" height="50">-->
     <h1>todos</h1>
     <input class="new-todo" placeholder="What needs to be done?" autofocus v-model="todo" @keyup.enter="addTodo">
   </header>

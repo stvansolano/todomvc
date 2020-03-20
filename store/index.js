@@ -3,7 +3,7 @@ import Vuex from 'vuex'
 import axios from 'axios'
 
 Vue.use(Vuex)
-const API = "https://38d6ae9f.ngrok.io";
+const API = "http://my-signalr-functions.azurewebsites.net/";
 
 const store = () => new Vuex.Store({
   state: {
@@ -14,7 +14,7 @@ const store = () => new Vuex.Store({
 
       if (state.todos.length == 0) {
         axios.get(`${API}/api/HttpGetTrigger`)
-              .then(response => { 
+              .then(response => {
                 var result = response.data;
                 state.todos = result;
               });
